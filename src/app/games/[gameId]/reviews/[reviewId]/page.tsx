@@ -16,3 +16,4 @@ export default function ReviewDetail({
     </h1>
   );
 }
+
