@@ -3,6 +3,7 @@ import Image from "next/image";
 import { inter } from "./ui/fonts";
 import "./globals.css";
 import styles from "./styles.module.css";
+import Navigation from "./ui/navigation/page";
 
 export const metadata = {
   title: "BEYOND REALMS 29 - VR ARENA",
@@ -16,56 +17,17 @@ export default function HomeLayout({
 }) {
   return (
     <html lang="en" className={styles.main}>
-      <body className={inter.className}>
+     <body className={inter.className}>
+        <Navigation />
         <header
           style={{
             backgroundImage: "url('/bg-header.png')",
             backgroundRepeat: "no-repeat",
             backgroundSize: "100%",
             width: "inherit",
-            height: "700px",
+            height: "64.313rem",
           }}
         >
-          <div className="sticky top-0">
-            <div className="flex items-center justify-center gap-10 text-xs font-extrabold text-white bg-black opacity-70">
-              <div>
-                <select className="select select-bordered select-xs w-full max-w-xs bg-black">
-                  <option disabled selected>
-                    Choose your City
-                  </option>
-                  <option>Frankfurt</option>
-                  <option>Berlin</option>
-                  <option>Hamburg</option>
-                  <option>Stutgart</option>
-                  <option>Dresden</option>
-                  <option>London</option>
-                </select>
-              </div>
-              <Link href="/adventures" className="hover:text-primary">
-                ADVENTURES
-              </Link>
-              <Link href="/experience" className="hover:text-primary">
-                BOOK AN EXPERIANCE
-              </Link>
-              <Link href="/">
-                <Image src="/logo29.png" alt="Logo" width={50} height={50} />
-              </Link>
-              <Link href="/about" className="hover:text-primary">
-                ABOUT
-              </Link>
-              <Link href="/contacts" className="hover:text-primary">
-                CONTACTS
-              </Link>
-              <div className="flex gap-10">
-                <Link href="/login" className="hover:text-primary">
-                  LOGIN
-                </Link>
-                <Link href="/register" className="hover:text-primary">
-                  REGISTER
-                </Link>
-              </div>
-            </div>
-          </div>
           <div>
             <div className="absolute inset-40">
               <Image src="/logo-2.png" alt="Logo-2" width={1000} height={60} />
@@ -101,7 +63,7 @@ export default function HomeLayout({
           <div className=" max-w-none text-white">
             <hr className="w-20 h-1" />
             <br />
-            "BEYOND REALMS 29 Ltd." +49 69 12345678 beyondrealms@gmail.com
+            &#34;BEYOND REALMS 29 Ltd.&#34; +49 69 12345678 beyondrealms@gmail.com
             <br />
             The Matrix Building, unit 7, Musterstrasse 777, Frankfurt am Main,
             Germany

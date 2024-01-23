@@ -10,6 +10,8 @@
   line-height: 1.2 !important;
   text-transform: uppercase;
   padding: 16% 7%;
+  width: fit-content;
+  height: min-content;
 }
 .new_main {
   font-family: "Arial Black" !important;
