@@ -16,11 +16,14 @@ export default function HomeLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={styles.main}>
-     <body className={inter.className}>
+    <html lang="en">
+     <body className={styles.body}>
         <Navigation />
-        <header
+        <div
           style={{
+            position: "relative",
+            top: "0",
+            left: "0",
             backgroundImage: "url('/bg-header.png')",
             backgroundRepeat: "no-repeat",
             backgroundSize: "100%",
@@ -54,7 +57,7 @@ export default function HomeLayout({
               <Image src="/people.png" alt="People" width={670} height={600} />
             </div>
           </div>
-        </header>
+        </div>
         {children}
         <footer className="footer footer-center p-2 bg-black">
           <div>
