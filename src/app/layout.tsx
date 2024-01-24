@@ -1,11 +1,10 @@
 import Link from "next/link";
 import Image from "next/image";
-import { inter } from "./ui/fonts";
 import "./globals.css";
 import styles from "./styles.module.css";
 import Navigation from "./ui/navigation/page";
-import LogRocket from 'logrocket';
-LogRocket.init('ruanur/br29');
+import LogRocket from "logrocket";
+LogRocket.init("ruanur/br29");
 
 export const metadata = {
   title: "BEYOND REALMS 29 - VR ARENA",
@@ -19,7 +18,7 @@ export default function HomeLayout({
 }) {
   return (
     <html lang="en">
-     <body className={styles.body}>
+      <body className={styles.body}>
         <Navigation />
         <div
           style={{
@@ -34,7 +33,7 @@ export default function HomeLayout({
           }}
         >
           <div>
-            <div className="absolute inset-40">
+            <div className="absolute top-[150px] left-[200px]">
               <Image src="/logo-2.png" alt="Logo-2" width={1000} height={60} />
             </div>
             <div className={styles.new_main}>
@@ -47,16 +46,13 @@ export default function HomeLayout({
               <br />
               <span className="text-secondary">WITH FREE MOVEMENT</span>
               <div>
-
-              </div>
-              <div>
-              <button className="btn bg-primary text-secondary btn-xs sm:btn-sm md:btn-md lg:btn-lg hover:bg-rose-500">
-                BOOK YOUR EXPERIENCE
+                <button className="btn bg-primary text-secondary btn-xs sm:btn-sm md:btn-md lg:btn-lg hover:bg-rose-500">
+                  BOOK YOUR EXPERIENCE
                 </button>
               </div>
             </div>
-            <div className="absolute top-52 right-0">
-              <Image src="/people.png" alt="People" width={670} height={600} />
+            <div className="absolute top-[225px] left-[760px]">
+              <Image src="/people.png" alt="People" width={710} height={60} />
             </div>
           </div>
         </div>
@@ -68,7 +64,8 @@ export default function HomeLayout({
           <div className=" max-w-none text-white">
             <hr className="w-1/2 h-0,5" />
             <br />
-            &#34;BEYOND REALMS 29 Ltd.&#34; +49 69 12345678 beyondrealms@gmail.com
+            &#34;BEYOND REALMS 29 Ltd.&#34; +49 69 12345678
+            beyondrealms@gmail.com
             <br />
             The Matrix Building, unit 7, Musterstrasse 777, Frankfurt am Main,
             Germany
@@ -82,4 +79,3 @@ export default function HomeLayout({
     </html>
   );
 }
-
