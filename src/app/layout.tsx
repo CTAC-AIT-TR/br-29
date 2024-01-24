@@ -4,6 +4,8 @@ import { inter } from "./ui/fonts";
 import "./globals.css";
 import styles from "./styles.module.css";
 import Navigation from "./ui/navigation/page";
+import LogRocket from 'logrocket';
+LogRocket.init('ruanur/br29');
 
 export const metadata = {
   title: "BEYOND REALMS 29 - VR ARENA",
@@ -64,7 +66,7 @@ export default function HomeLayout({
             <Image src="/logo29.png" alt="BR29 Logo" width={100} height={100} />
           </div>
           <div className=" max-w-none text-white">
-            <hr className="w-20 h-1" />
+            <hr className="w-1/2 h-0,5" />
             <br />
             &#34;BEYOND REALMS 29 Ltd.&#34; +49 69 12345678 beyondrealms@gmail.com
             <br />

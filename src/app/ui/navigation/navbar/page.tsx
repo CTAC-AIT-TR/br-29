@@ -27,8 +27,8 @@ export default function Navbar({ toggle }: { toggle: () => void }) {
             </button>
             <ul className="hidden md:flex gap-x-6 text-secondary">
               <li>
-                <select className="select-xs max-w-xs bg-gray-900 border-secondary border-2 text-white opacity-100">
-                  <option disabled selected>
+                <select defaultValue={'DEFAULT'} className="select-xs max-w-xs bg-gray-900 border-secondary border-2 text-white">
+                  <option disabled selected defaultValue={'DEFAULT'}>
                     CHOOSE YOUR CITY
                   </option>
                   <option>FRANKFURT</option>
