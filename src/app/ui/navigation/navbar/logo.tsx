@@ -17,7 +17,6 @@ const Logo = () => {
     updateWidth();
   }, []);
 
-  // change between the logo and the button when the user scrolls
   const [showButton, setShowButton] = useState(false);
 
   const changeNavButton = () => {
@@ -36,7 +35,7 @@ const Logo = () => {
     <>
       <Link href="/" style={{ display: showButton ? "none" : "block" }}>
         <Image
-          src="/images/logo29.png"
+          src="/logo29.png"
           alt="Logo"
           width={width < 1024 ? "40" : "55"}
           height={width < 1024 ? "40" : "55"}
